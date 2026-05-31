@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: black;
+            color: white;
+            padding: 40px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            margin-bottom: 40px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            width: 300px;
+            border: 2px solid orangered;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .card h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .card p {
+            line-height: 30px;
+            color: lightgray;
+        }
+        .company {
+            text-align: center;
+            color: orangered;
+            margin-top: 20px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        @media(max-width:768px) {
+            h1 {
+                font-size: 35px;
+            }
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Testimonials</h1>
+    <div class="container">
+        <div class="card">
+            <h2>Kedar Kapoor</h2>
+            <p>
+                Andres is a fantastic engineer.
+                He is dedicated, trustworthy and
+                always delivers quality work.
+            </p>
+            <div class="company">
+                CyberZek
+            </div>
+        </div>
+        <div class="card">
+            <h2>Ryan & Gretchen</h2>
+            <p>
+                Andres worked hard to bring our
+                vision to life. We are very happy
+                with the final result and support.
+            </p>
+            <div class="company">
+                TACTICA Ministries
+            </div>
+        </div>
+        <div class="card">
+            <h2>Antonio</h2>
+            <p>
+                Andres is professional, creative
+                and communicates effectively.
+                A pleasure to work with.
+            </p>
+            <div class="company">
+                Drontec
+            </div>
+        </div>
+    </div>
+</body>
+</html>

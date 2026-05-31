@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #0F172A;
+            color: white;
+            padding: 40px;
+        }
+        .about h1 {
+            color: #38BDF8;
+            margin-bottom: 10px;
+        }
+        .line {
+            width: 80px;
+            height: 4px;
+            background-color: #38BDF8;
+            margin-bottom: 20px;
+        }
+        .about p {
+            color: #CBD5E1;
+            margin-bottom: 30px;
+        }
+        .container {
+            display: flex;
+            gap: 30px;
+        }
+        .left {
+            flex: 1;
+        }
+        .left img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .right {
+            flex: 1;
+        }
+        .right h2 {
+            color: #38BDF8;
+            margin-bottom: 15px;
+        }
+        .boxes {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .box {
+            background-color: #1E293B;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .box h3 {
+            color: #38BDF8;
+            margin-bottom: 10px;
+        }
+        .btn {
+            margin-top: 20px;
+        }
+        .btn button {
+            background-color: #38BDF8;
+            color: #0F172A;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        @media(max-width:768px) {
+
+            .container {
+                flex-direction: column;
+            }
+            .boxes {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="about">
+        <h1>About Me</h1>
+        <div class="line"></div>
+        <p>
+            I am a passionate web developer who enjoys creating
+            simple and attractive websites.
+        </p>
+        <div class="container">
+            <div class="left">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800" alt="Developer">
+            </div>
+            <div class="right">
+                <h2>Web Developer</h2>
+                <p>
+                    I am learning HTML, CSS and JavaScript to build
+                    responsive and user-friendly websites.
+                </p>
+                <div class="boxes">
+                    <div class="box">
+                        <h3>Education</h3>
+                        <p>B.Sc IT</p>
+                    </div>
+                    <div class="box">
+                        <h3>Experience</h3>
+                        <p>Fresher</p>
+                    </div>
+                    <div class="box">
+                        <h3>Projects</h3>
+                        <p>5+ Completed</p>
+                    </div>
+                    <div class="box">
+                        <h3>Skills</h3>
+                        <p>HTML, CSS, JS</p>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button>Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
